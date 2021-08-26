@@ -23,3 +23,6 @@ TARGET_KERNEL_CONFIG := rmx2170_defconfig
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt/dtbs
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+
+# Properties
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
