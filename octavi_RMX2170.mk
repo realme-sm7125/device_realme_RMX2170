@@ -7,14 +7,14 @@
 # Inherit from RMX2170 device
 $(call inherit-product, device/realme/RMX2170/device.mk)
 
-# Inherit some common EvolutionX stuff
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common OctaviOS stuff
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
-PRODUCT_NAME := evolution_RMX2170
+PRODUCT_NAME := octavi_RMX2170
 PRODUCT_DEVICE := RMX2170
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := Realme 7 Pro
@@ -32,13 +32,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="RMX2170"
 
 # Inherit EvolutionX build stuff.
+OCTAVI_BUILD_DATE := $(shell date +"%Y%m%d-%H%M%S")
+TARGET_FACE_UNLOCK_SUPPORTED := true
+OCTAVI_DEVICE_MAINTAINER := Mayur-Varde
+OCTAVI_BUILD_TYPE := Official
 WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES_EVO := true
 TARGET_PIXEL_CHARGE_ANIM := true
-EXTRA_FOD_ANIMATIONS := true
-
-# Memetainer stuff
-EVO_DONATE_URL := https://paypal.me/marshmello61
-EVO_MAINTAINER := Mayur-Varde
-EVO_SUPPORT_URL := https://t.me/mellolab
+TARGET_WANTS_FOD_ANIMATIONS := true
+TARGET_USES_BLUR := true
