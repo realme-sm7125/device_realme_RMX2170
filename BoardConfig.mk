@@ -13,7 +13,7 @@ include device/realme/sm7125-common/BoardConfigCommon.mk
 DEVICE_PATH := device/realme/RMX2170
 
 # OTA assert
-#TARGET_OTA_ASSERT_DEVICE := RMX2170
+TARGET_OTA_ASSERT_DEVICE := RMX2170
 
 # Kernel
 TARGET_FORCE_PREBUILT_KERNEL := true
