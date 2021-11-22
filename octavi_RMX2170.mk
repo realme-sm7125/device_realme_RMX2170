@@ -31,7 +31,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX2170" \
     TARGET_DEVICE="RMX2170"
 
-# Inherit EvolutionX build stuff.
+# Inherit OctaviOS build stuff.
 OCTAVI_BUILD_DATE := $(shell date +"%Y%m%d-%H%M%S")
 TARGET_FACE_UNLOCK_SUPPORTED := true
 OCTAVI_DEVICE_MAINTAINER := Mayur-Varde
