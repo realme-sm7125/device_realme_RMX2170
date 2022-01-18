@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_RMX2170.mk
+    $(LOCAL_DIR)/radiant_RMX2170.mk
