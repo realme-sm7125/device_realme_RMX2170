@@ -19,3 +19,7 @@ else
     echo "Now will clone vendor/hotword" && echo ""
     git clone https://github.com/realme-sm7125/vendor_hotword vendor/hotword
 fi
+
+ # skip abi checks
+export SKIP_ABI_CHECKS=true
+echo ""
