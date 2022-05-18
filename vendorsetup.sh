@@ -32,3 +32,16 @@ else
         echo "There is some problem in cloning Realme dirac" && echo "" && sleep 0.5
     fi
 fi
+
+# crDroid gapps
+if [ -e vendor/gapps ]; then
+    echo "crDroid gapps exist... Skipping cloning." && echo "" && sleep 0.5
+else
+    echo "Now will clone crDroid gapps" && echo ""
+    git clone https://gitlab.com/crdroidandroid/android_vendor_gapps -b 12.1 vendor/gapps
+    if [ -e vendor/gapps ]; then
+        echo "Done cloning of crDroid gapps" && echo "" && sleep 0.5
+    else
+        echo "There is some problem in cloning crDroid gapps" && echo "" && sleep 0.5
+    fi
+fi
