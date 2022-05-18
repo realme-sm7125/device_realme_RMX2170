@@ -10,10 +10,6 @@ $(call inherit-product, device/realme/RMX2170/device.mk)
 # Inherit some common lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# GApps
-WITH_GMS := true
-$(call inherit-product, vendor/gms/products/gms.mk)
-
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
