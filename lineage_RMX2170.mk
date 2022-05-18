@@ -13,8 +13,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # GApps
 WITH_GMS := true
 $(call inherit-product, vendor/gms/products/gms.mk)
-# Inherit crDroid gapps
-#  $(call inherit-product-if-exists, vendor/gapps/basic/config.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -38,7 +36,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="RMX2170"
 
 # Inherit lineage build stuff.
-TARGET_GAPPS_ARCH := arm64
 TARGET_PIXEL_CHARGE_ANIM := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_HAS_UDFPS := true
