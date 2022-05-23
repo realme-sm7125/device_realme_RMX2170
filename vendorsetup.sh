@@ -32,3 +32,16 @@ else
         echo "There is some problem in cloning Realme dirac" && echo "" && sleep 0.5
     fi
 fi
+
+# hardware/xiaomi
+if [ -e hardware/xiaomi ]; then
+    echo "Repo hardware/xiaomi exist... Skipping cloning." && echo "" && sleep 0.5
+else
+    echo "Now will clone hardware/xiaomi" && echo ""
+    git clone https://github.com/realme-sm7125/hardware_xiaomi hardware/xiaomi
+    if [ -e hardware/xiaomi ]; then
+        echo "Done cloning of repo hardware/xiaomi" && echo && sleep 0.5
+    else
+        echo "There is some problem in cloning hardware/xiaomi" && echo "" && sleep 0.5
+    fi
+fi
