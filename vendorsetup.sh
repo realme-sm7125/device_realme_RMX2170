@@ -45,3 +45,16 @@ else
         echo "There is some problem in cloning hardware/xiaomi" && echo "" && sleep 0.5
     fi
 fi
+
+# Lawnchair
+if [ -e vendor/lawnchair ]; then
+    echo "Lawnchair exist... Skipping cloning." && echo "" && sleep 0.5
+else
+    echo "Now will clone lawnchair" && echo ""
+    git clone https://github.com/realme-sm7125/android_vendor_lawnchair vendor/lawnchair
+    if [ -e vendor/lawnchair ]; then
+        echo "Done cloning of lawnchair" && echo && sleep 0.5
+    else
+        echo "There is some problem in cloning lawnchair" && echo "" && sleep 0.5
+    fi
+fi

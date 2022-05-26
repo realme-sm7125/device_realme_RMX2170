@@ -41,3 +41,6 @@ TARGET_SUPPORTS_QUICK_TAP := true
 DERP_BUILDTYPE := Official
 EXTRA_UDFPS_ANIMATIONS := true
 USE_LEGACY_BOOTANIMATION := true
+
+# Inherit Lawnchair launcher
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
