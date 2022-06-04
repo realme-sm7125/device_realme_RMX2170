@@ -51,7 +51,7 @@ if [ -e vendor/lawnchair ]; then
     echo "Lawnchair exist... Skipping cloning." && echo "" && sleep 0.5
 else
     echo "Now will clone lawnchair" && echo ""
-    git clone https://github.com/realme-sm7125/android_vendor_lawnchair -b derp12.1 vendor/lawnchair
+    git clone https://github.com/realme-sm7125/lawnchair vendor/lawnchair
     if [ -e vendor/lawnchair ]; then
         echo "Done cloning of lawnchair" && echo && sleep 0.5
     else
