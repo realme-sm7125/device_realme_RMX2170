@@ -44,3 +44,6 @@ USE_LEGACY_BOOTANIMATION := true
 
 # Inherit Lawnchair launcher
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
+# Inherit OPlus Sans 2.0 font
+$(call inherit-product-if-exists, external/oplus-fonts/fonts.mk)
