@@ -16,4 +16,4 @@ DEVICE_PATH := device/realme/RMX2170
 TARGET_OTA_ASSERT_DEVICE := RMX2170
 
 # Properties
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
