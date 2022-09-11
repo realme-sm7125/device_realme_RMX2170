@@ -7,16 +7,16 @@ else
     echo "Done cloning of vendor/hotword" && echo ""
 fi
 
-# clang
-if [ -e prebuilts/clang/host/linux-x86/clang-r437112 ]; then
-    echo "Clang exists... Skipping cloning." && echo "" && sleep 0.5
+# proton clang
+if [ -e prebuilts/clang/host/linux-x86/clang-proton ]; then
+    echo "Proton clang exists... Skipping cloning." && echo "" && sleep 0.5
 else
-    echo "Now will clone Clang" && echo ""
-    git clone https://github.com/ArrowOS-Devices/android_prebuilts_clang_host_linux-x86_clang-r437112 prebuilts/clang/host/linux-x86/clang-r437112
-    if [ -e prebuilts/clang/host/linux-x86/clang-r437112 ]; then
-        echo "Done cloning of Clang" && echo "" && sleep 0.5
+    echo "Now will clone Proton clang" && echo ""
+    git clone --depth=1 https://github.com/kdrag0n/proton-clang prebuilts/clang/host/linux-x86/clang-proton
+    if [ -e prebuilts/clang/host/linux-x86/clang-proton ]; then
+        echo "Done cloning of Proton clang" && echo "" && sleep 0.5
     else
-        echo "There is some problem in cloning Clang" && echo "" && sleep 0.5
+        echo "There is some problem in cloning Proton clang" && echo "" && sleep 0.5
     fi
 fi
 
