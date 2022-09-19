@@ -45,29 +45,3 @@ else
         echo "There is some problem in cloning hardware/xiaomi" && echo "" && sleep 0.5
     fi
 fi
-
-# Lawnchair
-if [ -e vendor/lawnchair ]; then
-    echo "Lawnchair exist... Skipping cloning." && echo "" && sleep 0.5
-else
-    echo "Now will clone lawnchair" && echo ""
-    git clone https://github.com/realme-sm7125/lawnchair vendor/lawnchair
-    if [ -e vendor/lawnchair ]; then
-        echo "Done cloning of lawnchair" && echo && sleep 0.5
-    else
-        echo "There is some problem in cloning lawnchair" && echo "" && sleep 0.5
-    fi
-fi
-
-# Oplus
-if [ -e external/oplus-fonts ]; then
-    echo "external/oplus-fonts exist... Skipping cloning." && echo "" && sleep 0.5
-else
-    echo "Now will clone external/oplus-fonts" && echo ""
-    git clone https://github.com/realme-sm7125/external_oplus-fonts external/oplus-fonts
-    if [ -e external/oplus-fonts ]; then
-        echo "Done cloning of external/oplus-fonts" && echo && sleep 0.5
-    else
-        echo "There is some problem in cloning external/oplus-fonts" && echo "" && sleep 0.5
-    fi
-fi

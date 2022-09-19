@@ -41,9 +41,3 @@ TARGET_SUPPORTS_QUICK_TAP := true
 DERP_BUILDTYPE := Official
 EXTRA_UDFPS_ANIMATIONS := true
 USE_LEGACY_BOOTANIMATION := true
-
-# Inherit Lawnchair launcher
-# $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
-
-# Inherit OPlus Sans 2.0 font
-# $(call inherit-product-if-exists, external/oplus-fonts/fonts.mk)
