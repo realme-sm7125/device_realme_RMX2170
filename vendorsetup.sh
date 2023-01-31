@@ -45,3 +45,16 @@ else
         echo "There is some problem in cloning hardware/xiaomi" && echo "" && sleep 0.5
     fi
 fi
+
+# packages/apps/GCamGOPrebuilt
+if [ -e packages/apps/GCamGOPrebuilt ]; then
+    echo "GCamGoPrebuilt exist... Skipping cloning." && echo "" && sleep 0.5
+else
+    echo "Now will clone GCamGoPrebuilt" && echo ""
+    git clone https://github.com/realme-sm7125/packages_apps_GCamGOPrebuilt packages/apps/GCamGOPrebuilt
+    if [ -e packages/apps/GCamGOPrebuilt ]; then
+        echo "Done cloning of GCamGoPrebuilt" && echo && sleep 0.5
+    else
+        echo "There is some problem in cloning GCamGoPrebuilt" && echo "" && sleep 0.5
+    fi
+fi
