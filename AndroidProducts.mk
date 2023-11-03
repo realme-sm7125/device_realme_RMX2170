@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_RMX2170.mk
+    $(LOCAL_DIR)/rising_RMX2170.mk
