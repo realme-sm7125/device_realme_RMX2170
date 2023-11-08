@@ -46,15 +46,15 @@ else
     fi
 fi
 
-# packages/apps/GCamGOPrebuilt
-if [ -e packages/apps/GCamGOPrebuilt ]; then
-    echo "GCamGoPrebuilt exist... Skipping cloning." && echo "" && sleep 0.5
+# viper
+if [ -e packages/apps/ViPER4AndroidFX ]; then
+    echo "ViPER4AndroidFX exist... Skipping cloning." && echo "" && sleep 0.5
 else
-    echo "Now will clone GCamGoPrebuilt" && echo ""
-    git clone https://github.com/realme-sm7125/packages_apps_GCamGOPrebuilt packages/apps/GCamGOPrebuilt
-    if [ -e packages/apps/GCamGOPrebuilt ]; then
-        echo "Done cloning of GCamGoPrebuilt" && echo && sleep 0.5
+    echo "Now will clone ViPER4AndroidFX" && echo ""
+    git clone https://github.com/swiitch-OFF-Lab/packages_apps_ViPER4AndroidFX packages/apps/ViPER4AndroidFX
+    if [ -e packages/apps/ViPER4AndroidFX ]; then
+        echo "Done cloning of ViPER4AndroidFX" && echo && sleep 0.5
     else
-        echo "There is some problem in cloning GCamGoPrebuilt" && echo "" && sleep 0.5
+        echo "There is some problem in cloning ViPER4AndroidFX" && echo "" && sleep 0.5
     fi
 fi
