@@ -28,7 +28,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-realme
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="atoll-user 11 RKQ1.200903.002/ eng.root.04080114.013112 release-keys"
 
-BUILD_FINGERPRINT := "google/bullhead/bullhead:8.0.0/OPR6.170623.013/4283548:user/release-keys"
+BUILD_FINGERPRINT := "google/sailfish/sailfish:8.1.0/OPM2.171019.029/4657601:user/release-keys"
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
