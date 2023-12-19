@@ -51,7 +51,7 @@ if [ -e packages/apps/ViPER4AndroidFX ]; then
     echo "ViPER4AndroidFX exist... Skipping cloning." && echo "" && sleep 0.5
 else
     echo "Now will clone ViPER4AndroidFX" && echo ""
-    git clone https://github.com/swiitch-OFF-Lab/packages_apps_ViPER4AndroidFX packages/apps/ViPER4AndroidFX
+    git clone https://github.com/realme-sm7125/packages_apps_ViPER4AndroidFX packages/apps/ViPER4AndroidFX
     if [ -e packages/apps/ViPER4AndroidFX ]; then
         echo "Done cloning of ViPER4AndroidFX" && echo && sleep 0.5
     else
